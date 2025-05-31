@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.8.10 on win32)" generated="20250531 19:43:48.554" rpa="false" schemaversion="4">
+<suite id="s1" name="Test With Keywords" source="C:\Users\roni ebrar kevibeden\Desktop\nokia-test-task\tests\test_with_keywords.robot">
+<test id="s1-t1" name="KendoReact ContextMenu Styling with Python Keywords" line="11">
+<kw name="Evaluate" library="BuiltIn">
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].FirefoxOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20250531 19:43:48.783" level="INFO">${options} = &lt;selenium.webdriver.firefox.options.Options object at 0x000001F534E1B7C0&gt;</msg>
+<status status="PASS" starttime="20250531 19:43:48.783" endtime="20250531 19:43:48.783"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${HEADLESS}'=='True'</arg>
+<arg>Call Method</arg>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>-headless</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Call Method" library="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>-headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20250531 19:43:48.783" endtime="20250531 19:43:48.783"/>
+</kw>
+<status status="PASS" starttime="20250531 19:43:48.783" endtime="20250531 19:43:48.783"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Firefox</arg>
+<arg>options=${options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20250531 19:43:48.785" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" starttime="20250531 19:43:48.785" endtime="20250531 19:43:55.498"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20250531 19:43:55.498" level="INFO">Opening url 'https://demos.telerik.com/kendo-react-ui/layout/menu/context-menu/overview/func?theme=default-ocean-blue-a11y'</msg>
+<status status="PASS" starttime="20250531 19:43:55.498" endtime="20250531 19:44:47.617"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20250531 19:44:47.617" endtime="20250531 19:44:47.636"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250531 19:44:50.644" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20250531 19:44:47.642" endtime="20250531 19:44:50.649"/>
+</kw>
+<kw name="Apply Underline To Context Text" library="keywords">
+<status status="PASS" starttime="20250531 19:44:50.650" endtime="20250531 19:44:50.709"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250531 19:44:51.713" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20250531 19:44:50.711" endtime="20250531 19:44:51.713"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${SCREENSHOT_PATH}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20250531 19:44:51.791" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/contextmenu_result.png"&gt;&lt;img src="../screenshots/contextmenu_result.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20250531 19:44:51.714" endtime="20250531 19:44:51.791"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20250531 19:44:51.793" endtime="20250531 19:44:55.301"/>
+</kw>
+<status status="PASS" starttime="20250531 19:43:48.783" endtime="20250531 19:44:55.302"/>
+</test>
+<status status="PASS" starttime="20250531 19:43:48.570" endtime="20250531 19:44:55.306"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test With Keywords">Test With Keywords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
