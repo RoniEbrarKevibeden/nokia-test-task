@@ -1,0 +1,20 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Robot Framework output
+output.xml
+log.html
+report.html
+
+# Geckodriver logs
+geckodriver-*.log
+
+# VSCode settings
+.vscode/
+
+# Screenshots and test artifacts
+screenshots/
+
+# Pytest cache
+.pytest_cache/
